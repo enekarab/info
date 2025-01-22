@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.title{
+    font-size:xx-large ;
+}
+
+.header {
+    background-color: #004080;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.fach-buttons{
+    text-align: center;
+    justify-content: center;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.infos{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tablo{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Allgemeine Stile für den Body */
+
+/* Styling der Tabellen */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tabellenüberschriften */
+table thead tr {
+    background-color: #6c7ae0;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table thead th {
+    padding: 12px 15px;
+}
+
+/* Tabellenkörper */
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #6c7ae0;
+}
+
+table tbody td {
+    padding: 12px 15px;
+}
+
+/* Hover-Effekt für Zeilen */
+table tbody tr:hover {
+    background-color: #f1f5ff;
+    cursor: pointer;
+}
+
+/* Überschriften und Absätze */
+h1, h2 {
+    color: #6c7ae0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Für Listen innerhalb der Tabellen */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    color: #6c7ae0;
+    font-weight: bold;
+    display: inline-block;
+    width: 10px;
+    margin-left: -10px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 600px; /* Mindestbreite für große Tabellen */
+}
+
+/* Für ganz kleine Bildschirme optimieren */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Schriftgröße anpassen */
+    }
+
+    table thead th, table tbody td {
+        padding: 10px; /* Weniger Padding für schmalere Darstellung */
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px; /* Noch kleinere Schrift für sehr kleine Geräte */
+    }
+
+    table thead th, table tbody td {
+        padding: 8px; /* Noch enger für kleine Bildschirme */
+    }
+}
+
+.a{
+    text-align: center;
+}
+
+a {
+    padding: 15px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.videoteil{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mp4{
+    width: 100%;
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+
+    .fach-details {
+        padding: 15px;
+    }
+}

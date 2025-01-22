@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.title{
+    font-size:xx-large ;
+}
+
+.header {
+    background-color: #004080;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.fach-buttons{
+    text-align: center;
+    justify-content: center;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.infos{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tabe{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 20px;
+}
+
+.tablo{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+.a{
+    text-align: center;
+}
+
+a {
+    padding: 15px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.videoteil{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mp4{
+    width: 100%;
+}
+
+
+.footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    button {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+
+    .fach-details {
+        padding: 15px;
+    }
+}
